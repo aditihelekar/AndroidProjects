@@ -1,0 +1,1 @@
+This is a weather application in which you can add you favourite cities and obeserve the weather, change temperature settings from Farenheit and Celcius.

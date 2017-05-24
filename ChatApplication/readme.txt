@@ -1,0 +1,1 @@
+This is a trip application in which you can create profile using google sign in, add friends, create trip, join trip, delete trip, track trip path using Google places APIs.

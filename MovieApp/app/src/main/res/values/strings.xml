@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Movie</string>
+    <string name="add_movie_label">Add Movie</string>
+    <string name="edit_label">Edit</string>
+    <string name="delete_movie_label">Delete Movie</string>
+    <string name="show_list_label">Show List by Year</string>
+    <string name="show_list_rating_label">Show List by Rating</string>
+    <string name="add_activity_label">Add Movie</string>
+    <string name="name_label">Name:</string>
+    <string name="description_label">Description:</string>
+    <string name="genre_label">Genre:</string>
+    <string name="rating_label">Rating:</string>
+    <string name="year_label">Year:</string>
+    <string name="imdb_label">IMDB</string>
+    <string-array name="genre_labels">
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+    <string name="edit_movie_label">Edit Movie</string>
+    <string name="select_label">Select</string>
+    <string name="pack_label">Pick a movie</string>
+    <string name="save_changes_label">Save Changes</string>
+</resources>

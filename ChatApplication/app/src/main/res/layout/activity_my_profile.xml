@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="edu.uncc.chatapplication.MyProfileActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter name to search.."
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtSearchUserName"
+        android:textStyle="italic"
+        android:layout_toLeftOf="@+id/btnSearchUserName"
+        android:layout_toStartOf="@+id/btnSearchUserName"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@android:drawable/ic_search_category_default"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnSearchUserName"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/dialog_holo_dark_frame"
+        android:id="@+id/imgMyProfilePic"
+        android:layout_below="@+id/btnSearchUserName"
+        android:layout_alignLeft="@+id/btnPendingFriendReq"
+        android:layout_alignStart="@+id/btnPendingFriendReq"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMyProfileGender"
+        android:layout_above="@+id/btnPendingFriendReq"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMyProfileName"
+        android:layout_above="@+id/txtMyProfileGender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_toLeftOf="@+id/imgMyProfilePic"
+        android:layout_toStartOf="@+id/imgMyProfilePic"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Friends List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblFriendsList"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/imgMyProfilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+    <Button
+        android:text="Pending Requests"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btnPendingFriendReq"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/lblFriendsList"
+        android:layout_alignBottom="@+id/lblFriendsList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gridMyFriendsList"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_below="@+id/btnPendingFriendReq"
+        android:layout_alignRight="@+id/imgMyProfilePic"
+        android:layout_alignEnd="@+id/imgMyProfilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:text="My Trips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMyTrips"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/gridMyFriendsList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/gridMyTrips"
+        android:layout_below="@+id/lblMyTrips"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+    android:id="@+id/imageViewAddTripProfile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/gridMyTrips"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginEnd="15dp"
+    android:layout_marginRight="15dp"
+    app:srcCompat="@android:drawable/ic_input_add"
+    android:contentDescription=""
+    tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

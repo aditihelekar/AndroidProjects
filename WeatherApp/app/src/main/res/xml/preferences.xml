@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="Change Current City"
+        android:title="Change City">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="current_city_code"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter your city" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="current_country_code"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter your country" />
+    </PreferenceCategory>
+    <ListPreference
+        android:entries="@array/temp_choices"
+        android:entryValues="@array/temp_choices"
+        android:key="Temperature Unit"
+        android:title="Choose Temperature Unit" />
+</PreferenceScreen>
